@@ -1,8 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Kumbh Sans";
+  font-weight: 400;
+  src: url("src/assets/fonts/kumbhsans-regular-webfont.woff2") format("woff2"),
+    url("src/assets/fonts/kumbhsans-regular-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Kumbh Sans";
+  font-weight: 700;
+  src: url("src/assets/fonts/kumbhsans-bold-webfont.woff2") format("woff2"),
+    url("src/assets/fonts/kumbhsans-bold-webfont.woff") format("woff");
+}
 
 @layer base {
   body {
