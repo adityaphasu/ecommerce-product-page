@@ -21,3 +21,10 @@
     font-family: "Kumbh Sans", sans-serif;
   }
 }
+
+@layer components {
+  .filtered-img {
+    filter: invert(55%) sepia(93%) saturate(2173%) hue-rotate(347deg) brightness(102%)
+      contrast(101%);
+  }
+}
