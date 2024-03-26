@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      boxShadow: {
+        custom: "0 15px 38px -15px",
+      },
       colors: {
         orange: "hsl(26, 100%, 55%)",
         "pale-orange": "hsl(25, 100%, 94%)",
