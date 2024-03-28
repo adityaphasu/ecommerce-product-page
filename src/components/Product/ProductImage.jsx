@@ -6,7 +6,7 @@ const ProductImage = ({ productIndex, className, onClick }) => {
     <img
       src={products[productIndex]}
       alt="Sneaker"
-      className={cn("h-[19rem] w-full lg:h-full lg:rounded-xl", className)}
+      className={cn("h-[19rem] w-full md:h-full lg:rounded-xl", className)}
       onClick={onClick}
     />
   );

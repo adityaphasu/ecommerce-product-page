@@ -14,12 +14,12 @@ const ProductSlider = ({ className }) => {
       <ProductImage productIndex={currentImage} />
       <ProductSliderButton
         onClick={handlePrev}
-        className="left-4 top-[43%] size-10 pl-2"
+        className="left-4 top-[43%] size-10"
         icon={Previous}
       />
       <ProductSliderButton
         onClick={handleNext}
-        className="right-4 top-[43%] size-10 pr-2"
+        className="right-4 top-[43%] size-10"
         icon={Next}
       />
     </div>

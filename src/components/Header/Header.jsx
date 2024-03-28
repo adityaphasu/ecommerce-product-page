@@ -22,7 +22,7 @@ const Header = () => {
             <img
               src={ProfileAvatar}
               alt="Profile Image"
-              className="size-6 lg:size-[3.05rem]"
+              className="size-6 md:size-10 lg:size-[3.05rem]"
             />
           </a>
         </div>
