@@ -17,9 +17,9 @@ const CartItem = () => {
       </div>
       <button
         onClick={deleteFromCart}
-        className="flex size-5 max-w-full flex-shrink items-center justify-center"
+        className="group flex size-5 max-w-full flex-shrink items-center justify-center"
         aria-label="Remove from cart">
-        <img src={Delete} alt="" />
+        <img src={Delete} alt="" className="group-hover:red-filtered-img" />
       </button>
     </div>
   );

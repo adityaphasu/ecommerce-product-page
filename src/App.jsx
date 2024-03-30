@@ -10,6 +10,7 @@ import ProductSlider from "./components/Product/ProductSlider/ProductSlider";
 import ProductThumbnailSelector from "./components/Product/ProductThumbnail/ProductThumbnailSelector";
 
 import "./index.css";
+import { AnimatePresence } from "framer-motion";
 
 function App() {
   const { isCartOpen } = useCart();
@@ -24,7 +25,7 @@ function App() {
     <>
       <Header />
       <main className="pb-20 lg:mx-auto lg:grid lg:max-w-[69rem] lg:grid-cols-2 lg:border-t lg:px-11 lg:pb-16 lg:pt-[5.5rem] xl:gap-20 ">
-        {isCartOpen && <CartModal />}
+        <AnimatePresence>{isCartOpen && <CartModal />}</AnimatePresence>
         <div>
           <ProductSlider className="lg:hidden" />
           <ProductThumbnailSelector onClick={handleLightRoom} />
