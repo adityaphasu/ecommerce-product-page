@@ -22,7 +22,6 @@ const ProductThumbnails = ({ selectedThumbnail, setSelectedThumbnail }) => {
           />
         </button>
       ))}
-      ;
     </>
   );
 };
