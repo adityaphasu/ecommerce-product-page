@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { Close, Next, Previous } from "../../assets/icons";
 
 import ProductImage from "./ProductImage";
@@ -5,6 +6,7 @@ import ProductSliderButton from "./ProductSlider/ProductSliderButton";
 import ProductThumbnails from "./ProductThumbnail/ProductThumbnails";
 
 import useImageSlider from "../../hooks/useImageSlider";
+import Overlay from "../Overlay";
 
 const ProductLightRoom = ({ IsLightRoomOpen, setIsLightRoomOpen }) => {
   const { currentImage, setCurrentImage, handleNext, handlePrev } = useImageSlider();
@@ -15,8 +17,12 @@ const ProductLightRoom = ({ IsLightRoomOpen, setIsLightRoomOpen }) => {
 
   return (
     <>
-      <div className="fixed inset-0 z-50 size-full bg-black/75" onClick={handleClick}></div>
-      <div className="absolute left-[30%] right-[30%] top-[11.2%] z-50 grid grid-cols-4 place-items-center gap-8">
+      <Overlay onClick={handleClick} />
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.2 }}
+        className="absolute left-[30%] right-[30%] top-[11.2%] z-50 grid grid-cols-4 place-items-center gap-8">
         <button
           aria-label={IsLightRoomOpen && "Close light room"}
           onClick={handleClick}
@@ -50,7 +56,7 @@ const ProductLightRoom = ({ IsLightRoomOpen, setIsLightRoomOpen }) => {
             setSelectedThumbnail={setCurrentImage}
           />
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };

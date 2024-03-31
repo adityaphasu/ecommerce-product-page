@@ -4,6 +4,7 @@ import { Close } from "../../assets/icons";
 import { links } from "../../constants";
 import { motion } from "framer-motion";
 import MenuIcon from "../../assets/icons/icon-menu.svg";
+import Overlay from "../Overlay";
 
 const Menu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,24 +16,19 @@ const Menu = () => {
 
   return (
     <>
-      {isOpen && (
-        <div
-          className="fixed inset-0 z-20 size-full h-full bg-black/80"
-          onClick={handleMenuClick}
-        />
-      )}
+      {isOpen && <Overlay onClick={handleMenuClick} />}
       <button
         onClick={handleMenuClick}
         aria-label={isOpen ? "Close Menu" : "Open Menu"}
         aria-expanded={isOpen}
-        className={cn("z-50 lg:hidden", isOpen && "fixed")}>
+        className={cn("z-[60] lg:hidden", isOpen && "fixed")}>
         <img src={isOpen ? Close : MenuIcon} alt="" />
       </button>
 
       <ul
         onMouseLeave={() => setSelected(null)}
         className={cn(
-          "fixed inset-0 z-20 flex h-full w-4/6 flex-col gap-4 bg-white px-6 pt-[5.6rem] transition-all duration-300 lg:static lg:flex-row lg:gap-8 lg:p-0",
+          "fixed inset-0 z-50 flex h-full w-4/6 flex-col gap-4 bg-white px-6 pt-[5.6rem] transition-all duration-300 lg:static lg:flex-row lg:gap-8 lg:p-0",
           isOpen ? "-left-0" : "-left-[50rem]"
         )}>
         {links.map((link, idx) => (
