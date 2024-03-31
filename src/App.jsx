@@ -22,10 +22,10 @@ function App() {
   };
 
   return (
-    <>
+    <AnimatePresence>
       <Header />
       <main className="pb-20 lg:mx-auto lg:grid lg:max-w-[69rem] lg:grid-cols-2 lg:border-t lg:px-11 lg:pb-16 lg:pt-[5.5rem] xl:gap-20 ">
-        <AnimatePresence>{isCartOpen && <CartModal />}</AnimatePresence>
+        {isCartOpen && <CartModal />}
         <div>
           <ProductSlider className="lg:hidden" />
           <ProductThumbnailSelector onClick={handleLightRoom} />
@@ -41,7 +41,7 @@ function App() {
           <ProductActions />
         </div>
       </main>
-    </>
+    </AnimatePresence>
   );
 }
 

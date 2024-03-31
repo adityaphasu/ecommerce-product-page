@@ -25,9 +25,13 @@ const CartModal = () => {
               </button>
             </div>
           ) : (
-            <p className="self-center justify-self-center font-bold text-dark-grayish-blue">
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="self-center justify-self-center font-bold text-dark-grayish-blue">
               Your cart is empty.
-            </p>
+            </motion.p>
           )}
         </AnimatePresence>
       </div>
