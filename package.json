@@ -14,7 +14,8 @@
     "framer-motion": "^11.0.24",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "tailwind-merge": "^2.2.2"
+    "tailwind-merge": "^2.2.2",
+    "vite-plugin-pwa": "^0.19.7"
   },
   "devDependencies": {
     "@types/react": "^18.0.37",
