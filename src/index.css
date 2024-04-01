@@ -5,15 +5,17 @@
 @font-face {
   font-family: "Kumbh Sans";
   font-weight: 400;
-  src: url("src/assets/fonts/kumbhsans-regular-webfont.woff2") format("woff2"),
-    url("src/assets/fonts/kumbhsans-regular-webfont.woff") format("woff");
+  src: url("./assets/fonts/kumbhsans-regular-webfont.woff2") format("woff2"),
+    url("./assets/fonts/kumbhsans-regular-webfont.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Kumbh Sans";
   font-weight: 700;
-  src: url("src/assets/fonts/kumbhsans-bold-webfont.woff2") format("woff2"),
-    url("src/assets/fonts/kumbhsans-bold-webfont.woff") format("woff");
+  src: url("./assets/fonts/kumbhsans-bold-webfont.woff2") format("woff2"),
+    url("./assets/fonts/kumbhsans-bold-webfont.woff") format("woff");
+  font-display: swap;
 }
 
 @layer base {

@@ -21,7 +21,7 @@ const Header = () => {
             className="rounded-full transition hover:ring-2 hover:ring-orange focus:ring-2 focus:ring-orange ">
             <img
               src={ProfileAvatar}
-              alt="Profile Image"
+              alt="Profile"
               className="size-6 md:size-10 lg:size-[3.05rem]"
             />
           </a>
