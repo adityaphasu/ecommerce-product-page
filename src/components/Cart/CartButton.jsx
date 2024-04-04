@@ -28,6 +28,7 @@ const CartButton = () => {
       {cartItems.length > 0 && (
         <motion.span
           animate={controls}
+          aria-live="polite"
           className="absolute right-0.5 top-1 w-[1.3rem] rounded-lg bg-orange text-[0.6rem] font-bold text-white ">
           {cartItems}
         </motion.span>
