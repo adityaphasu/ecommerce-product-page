@@ -8,7 +8,7 @@ This is a challenge from [Frontend Mentor](https://www.frontendmentor.io/challen
 ### Links
 
 - [Live Site](https://ecommerce-product-page-mu-lake.vercel.app/)
-- Frontend Mentor: [Add solution URL here](https://your-solution-url.com)
+- [Frontend Mentor](https://www.frontendmentor.io/solutions/ecommerce-product-page-reactjs-tailwindcss-ItMcpaOei2)
 
 ## Features
 
